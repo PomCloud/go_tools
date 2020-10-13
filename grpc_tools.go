@@ -1,4 +1,4 @@
-package utils
+package go_tools
 
 import (
 	"fmt"
@@ -9,9 +9,6 @@ import (
 	"google.golang.org/grpc/peer"
 )
 
-//获取请求客户端的远程地址
-//
-//通过从metadata中获取远程地址信息
 func GetClientIP(ctx context.Context) (string, error) {
 	pr, ok := peer.FromContext(ctx)
 	if !ok {
