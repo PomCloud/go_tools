@@ -1,4 +1,4 @@
-package go_tools
+package utils
 
 import "testing"
 
